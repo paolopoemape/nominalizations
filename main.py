@@ -11,24 +11,19 @@ actor: one who acts \
 inventor: one who invents \
 sculptor: one who sculpts \
 governor: one who governs \
-translator: one who translates'
+translator: one who translates\
+Hiking can be arduous.\
+Writing is not for sissies.\
+Loitering is not permitted.'
 
-list_from_text = text_analyzed.split()
+#ing
+ing = re.findall(r"\w+ing\b", text_analyzed, flags=re.I)
+print(ing)
 
-print(list_from_text)
-#
-# x = re.findall(r"\w*tion|\w*sion\b", text_analyzed)
-# print(x)
-#
-# if not x:
-#     print("No match found")
-#
-# else:
-#     print("match found")
+#tion or sion
+ion = re.findall(r"\w+[st]ion\b", text_analyzed, flags=re.I)
+print(ion)
 
-pattern = 'w*tion|w*sion|w*ment|w*ence|w*ance|w*or'
-count = 0
-for match in re.finditer(pattern, text_analyzed):
-   count += 1
-
-print(count)
+#or
+find_or = re.findall(r"\w+or\b", text_analyzed, flags=re.I)
+print(find_or)
