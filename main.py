@@ -11,7 +11,7 @@ actor: one who acts \
 inventor: one who invents \
 sculptor: one who sculpts \
 governor: one who governs \
-translator: one who translates\
+translator: one who translates \
 Hiking can be arduous.\
 Writing is not for sissies.\
 Loitering is not permitted.\
@@ -47,4 +47,9 @@ print(ment)
 ence_or_ance = re.findall(r"\w+b?nce\b", text_analyzed, flags=re.I)
 print(ence_or_ance)
 
+#list of all the lists
 
+lst = ing + ion + find_or + ee + ment + ence_or_ance
+
+print("Here is a list of occurrences in the whole text: ")
+print(lst)
