@@ -2,7 +2,7 @@ import re
 
 
 text_analyzed = """The debate over how to address Little Cottonwood Canyon's traffic problem — a reality that during snowstorms or holidays can result in the 8-mile drive taking several hours — has been charged. Both Snowbird and Alta ski resorts have thrown their support behind the gondola, while Salt Lake County Mayor Jenny Wilson and groups like Wasatch Backcountry Alliance favor some kind of enhanced bus service.
-
+slac
 However, Wilson says there are other options she wants to see explored first — like a "user-friendly" hub for public transportation at the bottom of the canyon, improved buses, tolling and a system that rewards carpooling.
 
 "I don't like either choice, and frankly I think what we've done is chase the wrong thing for years," Wilson said during a press conference in September. "It's sort of like a Jenga game — if everything is stacked up perfectly, every assumption plays out, you're going to be fine. But you pull one piece out and the Jenga pieces fall to the ground."
@@ -49,3 +49,8 @@ lst = ing + ion + find_or + ee + ment + ence_or_ance
 
 print("Here is a list of occurrences in the whole text: ")
 print(lst)
+
+print("The number of total count by the count was: ", len(lst))
+manual_count = input("Enter the correct number of the right true count: ")
+calculation_precision = (int(manual_count)/len(lst))
+print("You entered: ", manual_count, "the precision of the program was: ", calculation_precision)
