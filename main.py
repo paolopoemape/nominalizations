@@ -27,11 +27,11 @@ ion = re.findall(r"\w+[st]ion\b", text_analyzed, flags=re.I)
 print(ion)
 
 #or
-find_or = re.findall(r"\w+or\b", text_analyzed, flags=re.I)
+find_or = re.findall(r"\w+or{3}\b", text_analyzed, flags=re.I)
 print(find_or)
 
 #ee
-ee = re.findall(r"\w+ee\b", text_analyzed, flags=re.I)
+ee = re.findall(r"\w+ee{3}\b", text_analyzed, flags=re.I)
 print(ee)
 
 #ment
